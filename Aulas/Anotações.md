@@ -57,8 +57,6 @@ git remote add origin https://github.com/usuario/repositorio.git
 
 # Verificando os remotos  
 git remote -v  
-# origin  https://github.com/usuario/repositorio.git (fetch)  
-# origin  https://github.com/usuario/repositorio.git (push)  
 
 # Removendo um repositório remoto  
 git remote remove origin  
