@@ -4,7 +4,8 @@
 
 O comando `git status` permite verificar o estado atual do repositório, mostrando quais arquivos foram modificados, adicionados ou ainda não rastreados. No VSCode, os arquivos são representados da seguinte forma:  
 - M (Modified) ✏️ → Arquivo modificado  
-- U (Untracked) 🆕 → Arquivo novo, ainda não adicionado ao Git  
+- U (Untracked) 🆕 → Arquivo novo, ainda não adicionado ao Git
+- A 
 
 Exemplo:
 
@@ -63,3 +64,11 @@ git remote remove origin
   git push / git pull ↕️  
         v  
 [Repositório Remoto 🌐 (GitHub, GitLab, etc.)]
+
+Git commit -m x git commit -a -m "Mensagem"
+
+O git commit -m voce pode comitar um arquivo especifico que está adicionado. 
+O git commit -a -m voce adiciona todos os arquivos a um unico commit
+
+
+
