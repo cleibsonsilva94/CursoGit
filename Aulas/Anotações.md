@@ -87,6 +87,4 @@ O git commit -a -m voce adiciona todos os arquivos a um unico commit
 
 ## Status
 
-O comando `git status` permite verificar o **estado atual do repositório**, mostrando quais arquivos foram modificados, adicionados ou ainda não rastreados.  
-
-No VSCode, os arquivos são representados da seguinte forma:
+O comando `git status` permite verificar o **estado atual do repositório**, mostrando quais arquivos foram modificados, adicionados ou ainda não rastreados. 
