@@ -3,9 +3,15 @@
 ## 1. Git Status 🟢
 
 O comando `git status` permite verificar o estado atual do repositório, mostrando quais arquivos foram modificados, adicionados ou ainda não rastreados. No VSCode, os arquivos são representados da seguinte forma:  
-- M (Modified) ✏️ → Arquivo modificado  
-- U (Untracked) 🆕 → Arquivo novo, ainda não adicionado ao Git
-- A 
+
+- `M` (Modified) ✏️ → Arquivo modificado  
+- `U` (Untracked) 🆕 → Arquivo novo, ainda não adicionado ao Git  
+- `A` (Added) ➕ → Arquivo adicionado ao Git, pronto para commit  
+- `D` (Deleted) ❌ → Arquivo deletado  
+- `R` (Renamed) 🔀 → Arquivo renomeado  
+- `C` (Copied) 📄 → Arquivo copiado  
+- `??` (Untracked) 🆕 → Arquivo novo não rastreado  
+- `!!` (Ignored) 🚫 → Arquivo ignorado pelo `.gitignore`
 
 Exemplo:
 
@@ -71,4 +77,18 @@ O git commit -m voce pode comitar um arquivo especifico que está adicionado.
 O git commit -a -m voce adiciona todos os arquivos a um unico commit
 
 
+## Commit
 
+- `git commit -m "Mensagem"`  
+  Permite criar um commit de um **arquivo específico** que já foi adicionado (`git add <arquivo>`).
+
+- `git commit -a -m "Mensagem"`  
+  Adiciona **todos os arquivos modificados** ao commit de uma única vez, sem precisar usar `git add` para cada arquivo.
+
+---
+
+## Status
+
+O comando `git status` permite verificar o **estado atual do repositório**, mostrando quais arquivos foram modificados, adicionados ou ainda não rastreados.  
+
+No VSCode, os arquivos são representados da seguinte forma:
