@@ -88,3 +88,37 @@ O git commit -a -m voce adiciona todos os arquivos a um unico commit
 ## Status
 
 O comando `git status` permite verificar o **estado atual do repositório**, mostrando quais arquivos foram modificados, adicionados ou ainda não rastreados. 
+
+## 3. Movendo o Repositório Git para Outra Pasta 📂➡️📁
+
+Durante a configuração do ambiente, foi necessário mover o controle do Git da pasta `Trilha` para dentro da subpasta `Git`, garantindo que o `.git` ficasse localizado corretamente no diretório desejado.
+
+### ⚙️ Passo a passo resumido
+
+```bash
+# 1. Acessar a pasta principal
+cd "C:\Users\clelima\OneDrive - Deloitte (O365D)\Documents\CDG_Test\Trilha"
+
+# 2. Remover o repositório Git antigo (no PowerShell)
+Remove-Item -Recurse -Force .git
+
+# 3. Entrar na pasta Git
+cd Git
+
+# 4. Inicializar um novo repositório Git
+git init
+
+# 5. Conectar ao repositório remoto existente
+git remote add origin https://github.com/cleibsonsilva94/CursosTrilha.git
+
+# 6. Baixar o histórico remoto (sem mesclar ainda)
+git fetch origin
+
+# 7. Vincular a branch local à remota
+git checkout -b master origin/master
+
+# 8. Confirmar se a branch está rastreando corretamente
+git branch -vv
+
+# 9. (Opcional) Atualizar os arquivos locais
+git pull
