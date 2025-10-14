@@ -122,3 +122,5 @@ git branch -vv
 
 # 9. (Opcional) Atualizar os arquivos locais
 git pull
+
+Exemplo teste
