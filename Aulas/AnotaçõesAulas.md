@@ -123,4 +123,11 @@ git branch -vv
 # 9. (Opcional) Atualizar os arquivos locais
 git pull
 
-Exemplo teste
+# Git Reset Hard
+git reset --hard origin/master
+# O que faz: força o branch local a ficar igual ao branch remoto 'master', descartando todas as alterações locais, inclusive arquivos não commitados.
+# Quando usar: para descartar tudo que foi feito localmente e sincronizar com o remoto.
+# Aviso: ⚠️ Perde todas as alterações locais não salvas.
+# Visualização simples:
+# Antes: Local: A - B - C (alterações locais) | Remote: A - B
+# Depois: Local: A - B (igual ao remoto) | Remote: A - B
