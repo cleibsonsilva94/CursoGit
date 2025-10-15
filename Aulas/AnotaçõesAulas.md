@@ -18,11 +18,11 @@ $ git status
 On branch main  
 Changes not staged for commit:  
   (use "git add <file>..." to update what will be committed)  
-  modified:   arquivo1.txt   # Representado por M no VSCode  
+  modified:   arquivo1.txt   # Representado por M no VScd  
 
 Untracked files:  
   (use "git add <file>..." to include in what will be committed)  
-  arquivo2.txt              # Representado por U no VSCode  
+  arquivo2.txt              # Representado por U no VScd  
 ```
 ### 🔄 Diagrama simplificado do fluxo de arquivos no Git
 ```
