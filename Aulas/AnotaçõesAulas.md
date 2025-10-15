@@ -132,3 +132,32 @@ Remoto: A - B
 - `git commit` → Registra alterações locais.  
 - `git reset --hard` → Restaura o estado original do repositório.  
 - Estruture sempre seu ambiente Git corretamente antes de versionar os arquivos.
+
+
+## 6. Git Merge 🔀
+O comando `git merge` é usado para **combinar alterações de diferentes branches** em uma única linha de desenvolvimento.  
+Ele integra o histórico de commits de uma branch (como `feature` ou `dev`) à branch atual (como `main`).
+
+### 💻 Git Merge
+| Comando | Descrição | Exemplo |
+|----------|------------|----------|
+| `git merge <branch>` | Mescla a branch especificada com a branch atual | `git merge feature-login` |
+| `git merge --no-ff <branch>` | Cria um novo commit de merge, mesmo se puder ser feito como fast-forward | `git merge --no-ff feature-login` |
+| `git merge --abort` | Cancela um merge em andamento em caso de conflitos | `git merge --abort` |
+| `git log --graph --oneline` | Visualiza o histórico de merges e commits em formato gráfico | `git log --graph --oneline` |
+
+### ⚙️ Passo a passo de uso
+```bash
+# 1. Verifique em qual branch você está
+git status
+
+# 2. Altere para a branch que receberá as alterações
+git checkout main
+
+# 3. Faça o merge da outra branch
+git merge feature-login
+
+# 4. Resolva conflitos (se houver)
+# Edite os arquivos com conflito e depois:
+git add .
+git commit
